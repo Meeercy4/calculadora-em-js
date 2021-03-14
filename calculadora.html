@@ -1,0 +1,36 @@
+<html>
+    <body>
+        <script>
+            //variaveis:
+            var numero1 = prompt('Insira o numero inicial:')
+            var operação = prompt('Insira o sinal da operação:')
+            //Obrigar a pessoa a fazer a operação correta
+            while(operação != '*' && operação != '+' && operação != '-' && operação != '/'){
+               operação = prompt('Insira um sinal valido...')
+            };
+            var numero2 = prompt('Insira o segundo numero:')
+            
+
+            //convertendo a string para numero
+            numero1 = parseInt(numero1);
+            numero2 = parseInt(numero2);
+
+            //criando a variavel do resultdo
+            var resultado = 0;
+            
+            //calculando
+            if(operação == '+'){
+                resultado = numero1 + numero2
+            }else if(operação == '*'){
+                resultado = numero1 * numero2
+            }else if(operação == '-'){
+                resultado = numero1 - numero2
+            }else if(operação == '/'){
+                resultado = numero1 / numero2
+            }
+
+            //resultado
+            alert('O resultado é: '+ resultado)
+        </script>
+    </body>
+</html>
